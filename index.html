@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="skyjin">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <title>EWP DEMO</title>
+    <!--E-MAIL Report-->
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src='./assets/reporting/pdfmake.min.js'></script>
+    <script src='./assets/reporting/vfs_fonts.js'></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+<div id="app"></div>
+</body>
+<script>
+    function sendEmail(url) {
+        // $("#send-email").on("click",function() {
+        console.log('send email')
+        Email.sendWithAttachment(
+                'ivaderlab.unist@gmail.com',
+                'ojmme625@gmail.com',
+                'Title',
+                'body',
+                'smtp.gmail.com',
+                'ivaderlab.unist@gmail.com',
+                'ivaderlab.unist.ac.kr',
+                url,
+                function done(message) {
+                    console.log(message)
+                    alert("This area for after mail send.")
+                }
+        )
+        // })
+    }
+</script>
+</html>
