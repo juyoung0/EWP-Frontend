@@ -1,8 +1,5 @@
 # Energy(Dong-Seo power plant) Web-monitoring Project
 
-- Dev. doc
-    - https://docs.google.com/spreadsheets/d/1VytJSVSWxuOGYUSZy_Ngq3AUiZWIkOX4gFS5y-gwDcU/edit?usp=sharing
-
 - Dependency
     - nodejs
     - git    
@@ -11,7 +8,6 @@
 - ApiPort : 2019
 
 - Install 
-	- git clone http://ivaderlab.unist.ac.kr:8081/ewp/ewp-web.git
 	- Window
 		- setup.bat
 	- Linux
@@ -22,3 +18,6 @@
         - run.bat
     - Linux
         - sh run.sh 
+
+## Figure ##
+![image](https://user-images.githubusercontent.com/8486747/135141854-83ce7ab1-5e9e-4dbc-b673-f8ab2d26bb98.png)
